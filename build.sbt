@@ -26,6 +26,8 @@ lazy val snunit = project
       "com.github.lolgab" %%% "snunit-http4s1" % snunitVersion,
       "com.github.lolgab" %%% "snunit-async-epollcat" % snunitVersion
     )
+    // On Ubuntu the control.sock is protected and available for root only
+    // , snunitCurlCommand := Seq("sudo", "curl")
   )
   .enablePlugins(SNUnitPlugin)
   .dependsOn(core.native)
