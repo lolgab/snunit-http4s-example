@@ -1,6 +1,5 @@
 import scala.scalanative.build._
 
-val snunitVersion = "0.2.1"
 val http4sVersion = "1.0.0-M37"
 val epollcatVersion = "0.1.1"
 
